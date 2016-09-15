@@ -8,6 +8,8 @@ public enum Symbol {
 	MINUS,
 	TIMES,
 	DIVIDES,
+	L_PAREN,
+	R_PAREN,
 	
 	// Nonterminal symbols
 	S,
@@ -39,6 +41,10 @@ public enum Symbol {
 				return TIMES;
 			case '/':
 				return DIVIDES;
+			case '(':
+				return L_PAREN;
+			case ')':
+				return R_PAREN;
 			default:
 				throw new LexerException("Unknown character: " + ((char)ch));
 			}

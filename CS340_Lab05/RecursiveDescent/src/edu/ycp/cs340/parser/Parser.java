@@ -98,13 +98,20 @@ public class Parser {
 		Node f = new Node(Symbol.F);
 		
 		Token tok = lexer.next();
-		
 		if (tok.getSymbol() == Symbol.INT_LITERAL) {
 			// 	F → 0 | 1 | 2 | ... | 9	
 			f.getChildren().add(new Node(tok));
 		} else if (tok.getSymbol() == Symbol.IDENTIFIER) {
 			// 	F → a | b
 			f.getChildren().add(new Node(tok));
+		} else if(tok.getSymbol() == Symbol.L_PAREN) {
+			f.getChildren().add(new Node(tok));
+			f.getChildren().add(parseE());
+			Token r_paren = lexer.next();
+			if(r_paren.getSymbol() != Symbol.R_PAREN) {
+				throw new ParserException("Unexpected symbol, expected )");
+			}
+			f.getChildren().add(new Node(r_paren));
 		} else {
 			throw new ParserException("Unexpected symbol looking for int literal or identifier: " + tok);
 		}

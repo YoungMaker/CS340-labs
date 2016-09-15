@@ -27,7 +27,7 @@ public class Lexer {
 		return result;
 	}
 	
-	private static final String LEGAL = "ab0123456789+-*/";
+	private static final String LEGAL = "ab0123456789+-*/()";
 
 	private void fill() {
 		try {
