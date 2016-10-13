@@ -1,0 +1,3 @@
+(defn tally-item [prices line-item] 
+  (* (get prices (first line-item)) (nth line-item 1))
+)
