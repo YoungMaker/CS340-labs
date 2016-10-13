@@ -14,7 +14,8 @@
 ;;    (check-x :_) => false
 ;;
 (defn check-x [piece-to-check]
-  "OHAI!")
+  (= piece-to-check :x)
+  )
 
 ;; Check whether specified piece is :o.
 ;;
@@ -30,7 +31,8 @@
 ;;    (check-o :_) => false
 ;;
 (defn check-o [piece-to-check]
-  "OHAI!")
+  (= piece-to-check :o)
+  )
 
 ;; Return a function that behaves equivalently to check-x
 ;; or check-o depending on whether piece is :x or :o.
@@ -51,7 +53,8 @@
 ;;
 (defn make-check-fn [piece]
   (fn [piece-to-check]
-    "OHAI!"))
+    (= piece piece-to-check)
+    ))
 
 ;; Get specified row of board.
 ;;

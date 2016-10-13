@@ -490,3 +490,225 @@ java.net.SocketTimeoutException: Read timed out
 
 !ENTRY ccw.core 1 0 2016-10-11 10:49:30.282
 !MESSAGE Stopping ccw nREPL server...
+!SESSION 2016-10-13 10:22:36.898 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ccw.core 1 0 2016-10-13 10:22:43.272
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2016-10-13 10:22:43.539
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.0"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2016-10-13 10:22:46.815
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.525
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-ansi-repl/ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.552
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-ansi-repl
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.600
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hello-world/hello-world.clj
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.610
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.751
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hyperlink/script.clj
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.761
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hyperlink
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.845
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-manager/ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.855
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-manager
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.933
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-zoom/ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.946
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2016-10-13 10:23:04.956
+!MESSAGE Loaded User Plugins
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:05.009
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #1
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:06.582
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:25.844
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #2
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:25.873
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:50.749
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #3
+
+!ENTRY ccw.core 1 0 2016-10-13 10:25:50.767
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY ccw.core 1 0 2016-10-13 10:26:22.948
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #4
+
+!ENTRY ccw.core 1 0 2016-10-13 10:26:22.963
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY ccw.core 1 0 2016-10-13 10:27:04.406
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #5
+
+!ENTRY ccw.core 1 0 2016-10-13 10:27:04.425
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2016-10-13 10:28:14.160
+!MESSAGE Updating the index from remote failed. ; version: 2.0.1.v20160605-1811
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.downloadDatabase(IO.java:171)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:280)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY ccw.core 1 0 2016-10-13 10:29:23.592
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab12 REPL #6
+
+!ENTRY ccw.core 1 0 2016-10-13 10:29:23.612
+!MESSAGE Starting REPL with program args: -i "/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lib/ccw.server-jar/ccw/debug/serverrepl.clj" -e "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -e "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -e "(require 'clojure.tools.nrepl.server)(require 'cider.nrepl)(let [server (clojure.tools.nrepl.server/start-server :handler cider.nrepl/cider-nrepl-handler)] (println (str \"nREPL server started on port \" (:port server) \" on host 127.0.0.1 - nrepl://127.0.0.1:\" (:port server))))"  
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:21.928
+!MESSAGE Change Clojure language support : Clojure language support successfully added for project CS340_Lab12.
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:32.488
+!MESSAGE nRepl port will be automatically selected
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:32.504
+!MESSAGE Started ccw nREPL server: nrepl://127.0.0.1:41277
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:32.561
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: CS340_Lab12 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:32.821
+!MESSAGE Launched process with command line: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.101-3.b13.el7_2.x86_64/jre/bin/java -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:46491 -Dccw.repl.launchid=a3103990-8f64-4fcf-83b8-01a28bba1028 -client -Xbootclasspath/a:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 -Dmaven.wagon.http.ssl.easy=false -classpath /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lein clojure.main -m ccw.leiningen.main update-in :jvm-opts concat "[\"-Xdebug\" \"-Xrunjdwp:transport=dt_socket,server=y,suspend=n\"]" -- update-in : dissoc :main -- update-in :dependencies conj "[ccw/ccw.server \"0.2.0\"]" -- update-in :injections conj "(require 'ccw.debug.serverrepl)" -- update-in :plugins conj "[cider/cider-nrepl \"0.9.0\"]" -- update-in :dependencies conj "[org.clojure/tools.nrepl \"0.2.10\"]" -- update-in :injections conj "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -- update-in :injections conj "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -- repl :headless
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:32.834
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: CS340_Lab12 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-10-13 10:39:49.443
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: CS340_Lab12 Leiningen VM #1 for getting the promise to set the port to nrepl://127.0.0.1:33506
+
+!ENTRY ccw.core 1 0 2016-10-13 10:48:37.383
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key CS340_Lab12 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-10-13 10:48:38.645
+!MESSAGE Stopping ccw nREPL server...

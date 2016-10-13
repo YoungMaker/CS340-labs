@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="ccw.launching.clojure">
+<stringAttribute key="CCW_ATTR_FILES_LAUNCHED_AT_STARTUP" value=""/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/cs340-lab12"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="clojure.main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=""/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="cs340-lab12"/>
+</launchConfiguration>
