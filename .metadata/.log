@@ -712,3 +712,216 @@ java.net.SocketTimeoutException: Read timed out
 
 !ENTRY ccw.core 1 0 2016-10-13 10:48:38.645
 !MESSAGE Stopping ccw nREPL server...
+!SESSION 2016-11-10 09:43:52.020 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ccw.core 1 0 2016-11-10 09:43:59.530
+!MESSAGE CCWPlugin.start(): ENTER
+
+!ENTRY ccw.core 1 0 2016-11-10 09:43:59.746
+!MESSAGE Counterclockwise dependencies:
+        [bultitude "0.2.1"]
+        [ccw/ccw.server "0.2.0"]
+        [ccw/clojure-ccw "1.7.0"]
+        [cheshire "5.0.2"]
+        [classlojure "0.6.6"]
+        [clj-http "0.9.2"]
+        [clj-stacktrace "0.2.7"]
+        [clj-tuple "0.1.2"]
+        [clojure-complete "0.2.3"]
+        [com.cemerick/drawbridge "0.0.6"]
+        [com.cemerick/pomegranate "0.3.0"]
+        [com.fasterxml.jackson.core/jackson-core "2.1.3"]
+        [com.fasterxml.jackson.dataformat/jackson-dataformat-smile "2.1.2"]
+        [com.hypirion/io "0.3.1"]
+        [commons-codec "1.9"]
+        [commons-fileupload "1.2.1"]
+        [commons-io "2.4"]
+        [commons-lang "2.6"]
+        [commons-logging "1.1.3"]
+        [dynapath "0.2.0"]
+        [jline "2.12"]
+        [leiningen "2.5.1"]
+        [leiningen-core "2.5.1"]
+        [net.cgrand/parsley "0.9.2"]
+        [net.cgrand/regex "1.1.0"]
+        [net.cgrand/sjacket "0.1.1"]
+        [net.mikera/cljunit "0.2.0"]
+        [org.apache.httpcomponents/httpclient "4.3.3"]
+        [org.apache.httpcomponents/httpcore "4.3.2"]
+        [org.apache.httpcomponents/httpmime "4.3.3"]
+        [org.apache.maven/maven-aether-provider "3.0.4"]
+        [org.apache.maven/maven-model "3.0.4"]
+        [org.apache.maven/maven-model-builder "3.0.4"]
+        [org.apache.maven/maven-repository-metadata "3.0.4"]
+        [org.apache.maven.indexer/indexer-artifact "4.1.3"]
+        [org.apache.maven.indexer/indexer-core "4.1.3"]
+        [org.apache.maven.wagon/wagon-http "2.7"]
+        [org.apache.maven.wagon/wagon-http-shared "2.7"]
+        [org.apache.maven.wagon/wagon-provider-api "2.2"]
+        [org.clojure/clojure-contrib "1.2.0"]
+        [org.clojure/core.incubator "0.1.0"]
+        [org.clojure/data.xml "0.0.3"]
+        [org.clojure/java.classpath "0.2.2"]
+        [org.clojure/java.data "0.1.1"]
+        [org.clojure/tools.cli "0.3.1"]
+        [org.clojure/tools.logging "0.2.3"]
+        [org.clojure/tools.macro "0.1.1"]
+        [org.clojure/tools.nrepl "0.2.10"]
+        [org.clojure/tools.reader "0.8.4"]
+        [org.codehaus.plexus/plexus-classworlds "2.4"]
+        [org.codehaus.plexus/plexus-component-annotations "1.5.5"]
+        [org.codehaus.plexus/plexus-interpolation "1.14"]
+        [org.codehaus.plexus/plexus-utils "2.0.6"]
+        [org.jsoup/jsoup "1.7.2"]
+        [org.sonatype.aether/aether-api "1.13.1"]
+        [org.sonatype.aether/aether-connector-file "1.13.1"]
+        [org.sonatype.aether/aether-connector-wagon "1.13.1"]
+        [org.sonatype.aether/aether-impl "1.13.1"]
+        [org.sonatype.aether/aether-spi "1.13.1"]
+        [org.sonatype.aether/aether-util "1.13.1"]
+        [org.sonatype.sisu/sisu-inject-bean "2.2.3"]
+        [org.sonatype.sisu/sisu-inject-plexus "2.2.3"]
+        [org.tcrawley/dynapath "0.2.3"]
+        [pedantic "0.2.0"]
+        [potemkin "0.3.4"]
+        [prismatic/schema "0.4.4"]
+        [quoin "0.1.2"]
+        [reply "0.3.5"]
+        [riddley "0.1.6"]
+        [ring/ring-core "1.0.2"]
+        [robert/hooke "1.3.0"]
+        [scout "0.1.0"]
+        [slingshot "0.10.3"]
+        [stencil "0.3.5"]
+        [trptcolin/versioneer "0.1.1"]
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:03.253
+!MESSAGE CCWPlugin.start(): EXIT
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.508
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-ansi-repl/ansi-repl.clj
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.562
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-ansi-repl
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.656
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hello-world/hello-world.clj
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.668
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hello-world
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.814
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hyperlink/script.clj
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.825
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-hyperlink
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.917
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-manager/ccw-plugin-manager.clj
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:24.927
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-manager
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:25.048
+!MESSAGE Loaded User Script /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-zoom/ccw-plugin-zoom.clj
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:25.057
+!MESSAGE Loaded User Plugin: /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/ccw-plugins/ccw-plugin-zoom
+
+!ENTRY ccw.core 1 0 2016-11-10 09:44:25.067
+!MESSAGE Loaded User Plugins
+
+!ENTRY ccw.core 1 0 2016-11-10 09:49:53.920
+!MESSAGE nRepl port will be automatically selected
+
+!ENTRY ccw.core 1 0 2016-11-10 09:49:53.933
+!MESSAGE Started ccw nREPL server: nrepl://127.0.0.1:37926
+
+!ENTRY ccw.core 1 0 2016-11-10 09:49:54.045
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-11-10 09:49:54.462
+!MESSAGE Launched process with command line: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.101-3.b13.el7_2.x86_64/jre/bin/java -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:38182 -Dccw.repl.launchid=ed4c04c1-4e37-452a-820a-a73d4d7bf86a -client -Xbootclasspath/a:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 -Dmaven.wagon.http.ssl.easy=false -classpath /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lein clojure.main -m ccw.leiningen.main update-in :jvm-opts concat "[\"-Xdebug\" \"-Xrunjdwp:transport=dt_socket,server=y,suspend=n\"]" -- update-in : dissoc :main -- update-in :dependencies conj "[ccw/ccw.server \"0.2.0\"]" -- update-in :injections conj "(require 'ccw.debug.serverrepl)" -- update-in :plugins conj "[cider/cider-nrepl \"0.9.0\"]" -- update-in :dependencies conj "[org.clojure/tools.nrepl \"0.2.10\"]" -- update-in :injections conj "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -- update-in :injections conj "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -- repl :headless
+
+!ENTRY ccw.core 1 0 2016-11-10 09:49:54.478
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-11-10 09:50:18.552
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM #1 for getting the promise to set the port to nrepl://127.0.0.1:43797
+
+!ENTRY org.eclipse.ui 4 0 2016-11-10 10:51:51.193
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:301)
+	at ccw.eclipse$package_root_relative.invoke(eclipse.clj:467)
+	at ccw.eclipse$java_resource_paths.invoke(eclipse.clj:483)
+	at ccw_plugin_test_hyperlinks$detect_hyperlinks$fn__177.invoke(script.clj:16)
+	at clojure.core$map$fn__4553.invoke(core.clj:2622)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:507)
+	at clojure.core$seq__4128.invoke(core.clj:137)
+	at clojure.core$apply.invoke(core.clj:630)
+	at clojure.core$mapcat.doInvoke(core.clj:2660)
+	at clojure.lang.RestFn.invoke(RestFn.java:423)
+	at ccw_plugin_test_hyperlinks$detect_hyperlinks.invoke(script.clj:16)
+	at clojure.lang.Var.invoke(Var.java:383)
+	at ccw.api.hyperlink$factory$fn__6918.invoke(hyperlink.clj:59)
+	at ccw.api.hyperlink.proxy$ccw.editors.clojure.AbstractHyperlinkDetector$ff19274a.detectHyperlinks(Unknown Source)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:78)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:287)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:259)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:455)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:213)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:17.766
+!MESSAGE removed from launchNameREPLURLPromiseAndWithREPLView the key cs340-lab17 Leiningen VM #1
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:20.401
+!MESSAGE nRepl port will be automatically selected
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:20.516
+!MESSAGE putting in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM (1) #2
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:20.675
+!MESSAGE Launched process with command line: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.101-3.b13.el7_2.x86_64/jre/bin/java -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:45423 -Dccw.repl.launchid=2333e9f3-2b2f-485b-978c-8b9356bd90a4 -client -Xbootclasspath/a:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 -Dmaven.wagon.http.ssl.easy=false -classpath /opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/leiningen-standalone.jar:/opt/eclipse/plugins/ccw.core_0.35.0.STABLE001/lein clojure.main -m ccw.leiningen.main update-in :jvm-opts concat "[\"-Xdebug\" \"-Xrunjdwp:transport=dt_socket,server=y,suspend=n\"]" -- update-in : dissoc :main -- update-in :dependencies conj "[ccw/ccw.server \"0.2.0\"]" -- update-in :injections conj "(require 'ccw.debug.serverrepl)" -- update-in :plugins conj "[cider/cider-nrepl \"0.9.0\"]" -- update-in :dependencies conj "[org.clojure/tools.nrepl \"0.2.10\"]" -- update-in :injections conj "(alter-var-root #'clojure.core/print-object (fn [old-print-object] (fn [o, ^java.io.Writer w] (when (instance? clojure.lang.IMeta o)      (#'clojure.core/print-meta o w))         (.write w \"#<\")         (let [name (.getSimpleName (class o))]           (when (seq name)             (.write w name)             (.write w \" \")))         (.write w (str o))         (.write w \">\"))))" -- update-in :injections conj "(do (require 'clojure.pprint) (@(find-var 'clojure.pprint/use-method) @(find-var 'clojure.pprint/simple-dispatch) clojure.lang.Var @(find-var 'clojure.pprint/pprint-simple-default)))" -- repl :headless
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:20.685
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM (1) #2
+
+!ENTRY ccw.core 1 0 2016-11-10 11:00:39.296
+!MESSAGE reading in launchNameREPLURLPromiseAndWithREPLView the key: cs340-lab17 Leiningen VM (1) #2 for getting the promise to set the port to nrepl://127.0.0.1:35729
