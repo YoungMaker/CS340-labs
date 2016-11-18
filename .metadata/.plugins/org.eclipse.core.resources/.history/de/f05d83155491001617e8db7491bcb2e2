@@ -1,2 +1,0 @@
-cmdhistory=["(check-x \:x)" "((make-check-fn \:x) \:o)" "((make-check-fn \:x) \:x)" "((make-check-fn \:o)\:o)" "((make-check-fn \:o)\:x)"]
-eclipse.preferences.version=1

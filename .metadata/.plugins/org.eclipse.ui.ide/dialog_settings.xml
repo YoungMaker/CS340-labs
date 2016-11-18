@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="M:\Git\CS340-labs\CS340_Assign06\cs340-assign06"/>
 		<item value="/home/awalsh6/CS340-labs/CS340_lab12/cs340-lab12"/>
 	</list>
 	<section name="ExternalProjectImportWizard">

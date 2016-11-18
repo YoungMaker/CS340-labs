@@ -1,2 +1,0 @@
-cmdhistory=["load core.clj" "load (\\"core.clj\\")" "(tally-item {\:apple 1.5, \:pear 2.3} [\:pear 2])" "(tally-item {\:apple 1.5, \:pear 2.5} [\:pear 2])" "(invoice-total {\:apple 1.5, \:pear 2.3} [[\:apple 2] [\:pear 1]])" "(tally-item {\:apple 1.5, \:pear 2.5} [\:pear 2])" "(invoice-total {\:apple 1.5, \:pear 2.3} [[\:apple 2] [\:pear 1]])" "(swapsies [1 2])" "(swapsies [\\"hello\\" \\"world\\"])"]
-eclipse.preferences.version=1
