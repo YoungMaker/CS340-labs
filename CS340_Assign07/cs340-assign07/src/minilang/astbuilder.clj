@@ -39,6 +39,13 @@
 (defn recur-on-children [node]
   (node/make-node (:symbol node) (map build-ast (node/children node))))
 
+
+(defn build-primary [node]
+  (println "HELLO")
+  (if (= (node/num-children node) 1)
+    (node/get-child node 0)
+    (node/get-child node 1)))
+
 ; Build an Abstract Syntax Tree (AST) from the specified
 ; parse tree.
 ;
@@ -53,7 +60,8 @@
     :statement_list (flatten-statement-list node)
     :statement (build-ast (node/get-child node 0))
     :var_decl_statement (node/make-node :var_decl_statement [(node/get-child node 1)])
-    :expression_statement 
+    :expression_statement (node/make-node :expression_statement [(build-ast (node/get-child node 0))])
+    :primary (build-ast (build-primary node))
     node))
 
 ; ----------------------------------------------------------------------
