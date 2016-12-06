@@ -65,6 +65,8 @@
     :var_decl_statement (node/make-node :var_decl_statement [(node/get-child node 1)])
     :expression_statement (node/make-node :expression_statement [(build-ast (node/get-child node 0))])
     :primary (build-primary node)
+    :while_statement (build-while-if node)
+    :if_statement (build-while-if node)
     :op_assign (recur-on-children node)
     :op_plus (recur-on-children node)
     :op_minus (recur-on-children node)
@@ -84,8 +86,8 @@
 ; ----------------------------------------------------------------------
 
 ;(def testprog "var a; a := 3*4;")
-(def testprog "a * (b + 3);")
-;(def testprog "while (a <= b) { c; d*e*4; }")
+;(def testprog "a * (b + 3);")
+(def testprog "while (a <= b) { c; d*e*4; }")
 ;(def testprog "if (x != 4) { y := z*3; }")
 
 (def parse-tree (p/parse (lexer/token-sequence (lexer/create-lexer (java.io.StringReader. testprog)))))

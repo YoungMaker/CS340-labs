@@ -179,8 +179,7 @@
     ; Handle other kinds of primary expressions (identifiers, literals)      
     (if (contains? primary-expression-types token-type)
       (do-production :primary [(expect token-type)] token-seq)
-      (throw (RuntimeException. (str "Invalid token " token-type " looking for primary expression"))))))
-
+      (do-production :primary [(expect :lparen) parse-expression (expect :rparen)] token-seq))))
 ; This is adapted more or less directly from the wikipedia pseudo code:
 ;   http://en.wikipedia.org/wiki/Operator-precedence_parser
 
@@ -259,6 +258,16 @@
                  [(expect :var) (expect :identifier) (expect :semicolon)]
                  token-seq))
 
+(declare parse-if_statement) 
+(declare parse-while_statement)
+
+(defn parse-if_statement [token-seq]
+  (do-production :if_statement [(expect :if) (expect :lparen) parse-expression (expect :rparen) (expect :lbrace) parse-statement-list (expect :rbrace)] token-seq))
+
+
+(defn parse-while_statement [token-seq]
+  (do-production :while_statement [(expect :while) (expect :lparen) parse-expression (expect :rparen) (expect :lbrace) parse-statement-list (expect :rbrace)] token-seq))
+
 ; Parse an expression statement.
 ;
 ; Parameters:
@@ -284,6 +293,8 @@
       ; statement -> ^ var_decl_statement
       :var (do-production :statement [parse-var-decl-statement] token-seq)
       
+      :if (do-production :statement [parse-if_statement] token-seq)
+      :while (do-production :statement [parse-while_statement] token-seq)
       ; TODO: other types of statements can be added here!
       
       ; statement -> ^ expression_statement
@@ -349,5 +360,5 @@
 ;
 ;    (pp/pretty-print prog)
 
-;(def testprog "var a; var b; a := 5; b := a / a^4^5;")
-;(def prog (parse (lexer/token-sequence (lexer/create-lexer (java.io.StringReader. testprog)))))
+(def testprog "if ( (a + b) / 5 >= 44 ) { c := c ^ (2 + d); }")
+(def prog (parse (lexer/token-sequence (lexer/create-lexer (java.io.StringReader. testprog)))))
