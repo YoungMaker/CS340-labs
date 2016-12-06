@@ -53,7 +53,7 @@
     :statement_list (flatten-statement-list node)
     :statement (build-ast (node/get-child node 0))
     :var_decl_statement (node/make-node :var_decl_statement [(node/get-child node 1)])
-    :semicolon ()
+    :expression_statement 
     node))
 
 ; ----------------------------------------------------------------------
