@@ -41,10 +41,13 @@
 
 
 (defn build-primary [node]
-  (println "HELLO")
+  ;(println "HELLO")
   (if (= (node/num-children node) 1)
     (node/get-child node 0)
     (node/get-child node 1)))
+
+(defn build-while-if [node]
+  (node/make-node (:symbol node) [(build-ast (node/get-child node 2)) (build-ast (node/get-child node 5))]))
 
 ; Build an Abstract Syntax Tree (AST) from the specified
 ; parse tree.
@@ -61,15 +64,27 @@
     :statement (build-ast (node/get-child node 0))
     :var_decl_statement (node/make-node :var_decl_statement [(node/get-child node 1)])
     :expression_statement (node/make-node :expression_statement [(build-ast (node/get-child node 0))])
-    :primary (build-ast (build-primary node))
+    :primary (build-primary node)
+    :op_assign (recur-on-children node)
+    :op_plus (recur-on-children node)
+    :op_minus (recur-on-children node)
+    :op_mul (recur-on-children node)
+    :op_div (recur-on-children node)
+    :op_exp (recur-on-children node)
+    :op_lte (recur-on-children node)
+    :op_lt (recur-on-children node)
+    :op_gte (recur-on-children node)
+    :op_gt (recur-on-children node)
+    :op_eq (recur-on-children node)
+    :op_neq (recur-on-children node)
     node))
 
 ; ----------------------------------------------------------------------
 ; Testing
 ; ----------------------------------------------------------------------
 
-(def testprog "var a; a := 3*4;")
-;(def testprog "a * (b + 3);")
+;(def testprog "var a; a := 3*4;")
+(def testprog "a * (b + 3);")
 ;(def testprog "while (a <= b) { c; d*e*4; }")
 ;(def testprog "if (x != 4) { y := z*3; }")
 
