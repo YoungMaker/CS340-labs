@@ -17,11 +17,41 @@
         (generate-code (first nodes))
         (recur (rest nodes))))))
 
+(defn handle-expression-statement [aast]
+  (generate-code (node/get-child aast 0))
+  (if (node/has-prop? aast :last)
+    (do
+      (println "\tsyscall $println")
+      (println "\tpop"))
+    (println "\tpop"))
+  )
+
+(defn handle-int-literal [aast]
+  (let [literal-val (:value aast)]
+    (println "\tldc_i" literal-val)))
+
+(defn handle-op-assign [aast]
+  (let [child (node/get-child aast 0)
+        regnum-val (node/get-prop child :regnum)]
+    (do
+      (generate-code (node/get-child aast 1))
+      (println "\tdup")
+      (println "\tstlocal" regnum-val))))
+ (defn handle-op-add [aast]
+   (do
+     (generate-code (node/get-child aast 1))
+     
+     (println "\t add"))
+
 (defn generate-code [aast]
   ;(println (str "; at " (:symbol aast)))
   (case (:symbol aast)
     :statement_list (recur-on-children aast)
-    
+    :expression_statement (handle-expression-statement aast)
+  
+    :int_literal (handle-int-literal aast)
+    :op_assign (handle-op-assign aast)
+    :op_add (handle-op-add aast)
     ; TODO: handle other kinds of AST nodes
     
     ; Default case: do nothing
@@ -53,7 +83,8 @@
 ; in a REPL.
 ; ----------------------------------------------------------------------
 
-(def testprog "var a; a := 4 * 5; a;")
+;(def testprog "1; 2; 3; 42;")
+(def testprog "var a; a := 4  + 2;")
 ;(def testprog "var a; var b; var c; b := 6; c := 3; a := b*c;")
 (def parse-tree (p/parse (lexer/token-sequence (lexer/create-lexer (java.io.StringReader. testprog)))))
 (def ast (ast/build-ast parse-tree))

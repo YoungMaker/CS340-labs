@@ -44,7 +44,7 @@
   ;(println "HELLO")
   (if (= (node/num-children node) 1)
     (node/get-child node 0)
-    (node/get-child node 1)))
+    (build-ast (node/get-child node 1))))
 
 (defn build-while-if [node]
   (node/make-node (:symbol node) [(build-ast (node/get-child node 2)) (build-ast (node/get-child node 5))]))
