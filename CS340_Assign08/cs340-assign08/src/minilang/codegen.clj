@@ -37,22 +37,26 @@
       (generate-code (node/get-child aast 1))
       (println "\tdup")
       (println "\tstlocal" regnum-val))))
+
  (defn handle-op-add [aast]
    (do
+     (generate-code (node/get-child aast 0))
      (generate-code (node/get-child aast 1))
-     
-     (println "\t add"))
+     (println "\tadd")))
+ 
+ (defn handle-identifier
+   (println "ldlocal" (node/get-prop aast :regnum)))
 
 (defn generate-code [aast]
   ;(println (str "; at " (:symbol aast)))
   (case (:symbol aast)
     :statement_list (recur-on-children aast)
     :expression_statement (handle-expression-statement aast)
-  
+
     :int_literal (handle-int-literal aast)
     :op_assign (handle-op-assign aast)
-    :op_add (handle-op-add aast)
-    ; TODO: handle other kinds of AST nodes
+    :op_plus (handle-op-add aast)
+    :identifier (handle-identifier aast)
     
     ; Default case: do nothing
     ;(println (str "; ignored " (:symbol aast)))
@@ -84,7 +88,7 @@
 ; ----------------------------------------------------------------------
 
 ;(def testprog "1; 2; 3; 42;")
-(def testprog "var a; a := 4  + 2;")
+(def testprog "var a; a:= 4 + 2;")
 ;(def testprog "var a; var b; var c; b := 6; c := 3; a := b*c;")
 (def parse-tree (p/parse (lexer/token-sequence (lexer/create-lexer (java.io.StringReader. testprog)))))
 (def ast (ast/build-ast parse-tree))
