@@ -50,6 +50,24 @@
      (generate-code (node/get-child aast 1))
      (println "\tmul")))
  
+  (defn handle-op-exp [aast]
+   (do
+     (generate-code (node/get-child aast 0))
+     (generate-code (node/get-child aast 1))
+     (println "\texp")))
+  
+  (defn handle-op-sub [aast]
+   (do
+     (generate-code (node/get-child aast 0))
+     (generate-code (node/get-child aast 1))
+     (println "\tsub")))
+   
+   (defn handle-op-div [aast]
+   (do
+     (generate-code (node/get-child aast 0))
+     (generate-code (node/get-child aast 1))
+     (println "\tdiv")))
+ 
  (defn handle-identifier [aast]
    (let [regnum-val (node/get-prop aast :regnum)]
    (println "\tldlocal" regnum-val)))
@@ -64,6 +82,8 @@
     :op_assign (handle-op-assign aast)
     :op_plus (handle-op-add aast)
     :op_mul (handle-op-mul aast)
+    :op_exp (handle-op-exp aast)
+    :op_minus (handle-op-sub aast)
     :identifier (handle-identifier aast)
     
     ; Default case: do nothing
